@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: YuGothic,'Yu Gothic','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+::-webkit-scrollbar {
+      display: none;
+      -webkit-appearance: none;
+}
+html{
+  min-width: 1100px;
+}
+header{
+  text-align: center;
+  a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    height: 40px;
+    width: 60px;
+    line-height: 40px;
+    vertical-align: middle;
+  }
+  a:hover{
+    background-color: rgb(187, 187, 187);
+  }
+  height: 40px;
+  .active-menu{
+    background-color: rgb(187, 187, 187);
+  }
+}
+.container{
+    min-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  .box{
+    width: 100%;
+    height: calc(100vh - 40px);
+    display: none
+  }
+  .top{
+    position: relative;
+    overflow-y: hidden;
+    img{
+      height: 80vh;
+      float: left;
+    }
+    .jp-content{
+      text-align: right;
+      position: absolute;
+      right: 10%;
+      bottom:40%;;
+    }
+
+  }
+  .works{
+    position: relative;
+      text-align: left;
+    img{
+      height: 80vh;
+      display: inline-block;
+    }
+    .right{
+      margin-left: 20px;
+      display: inline-flex;
+      vertical-align:top;
+      padding-top: 40px;
+      .item{
+        margin: 20px;
+        display: inline-block;
+        width: 50%;
+      }
+      img{
+        height: 30vh;
+        clear:both;
+      }
+      a{
+        display: block;
+      }
+    }
+
+  }
+  .about{
+      text-align: left;
+    img{
+      height: 80vh;
+      display: inline-block;
+    }
+    .right{
+      display: inline-block;
+      margin-left: 90px;
+      vertical-align: top;
+      padding-top: 90px;
+      table{
+        tr{
+          height: 50px;
+        td:nth-child(1){
+          width: 200px;
+        }
+      }
+
+      }
+    }
+  }
+}
